@@ -1,0 +1,351 @@
+body {
+  
+  font-size: 14pt;
+  background-image: url('https://github.com/jacingithub12/pagWeb/blob/main/PANTALLA.png?raw=true');
+  background-size: cover; /* Ajusta la imagen para que cubra todo el fondo */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centra horizontalmente */
+  justify-content: center; /* Centra verticalmente */
+  height: 100vh; /* Establece el alto del contenedor al 100% del viewport */
+
+}
+
+.hidden {
+  display: none;
+}
+
+textarea,
+input[type=text] {
+  font-size: 14pt;
+}
+
+input[type=password] {
+  font-size: 14pt;
+}
+
+textarea {
+  height: 100px;
+  width: 300px;
+}
+
+#status {
+  color: green;
+}
+
+#delete-status {
+  color: blue;
+}
+
+h2 {
+  font-size: 14pt;
+  font-family: Comic Sans MS;
+}
+
+.register {
+  display:none;
+}
+
+.inicio_sesion{
+  display: block;
+}
+
+
+
+.highlighted {
+  text-shadow: 0 0 10px #ebff00 !important; /* Cambia la sombra del texto a verde */
+  font-size: 10px; /* Aumenta el tamaño de la letra */
+  font-weight: bold; /* Hace el texto más grueso */
+  border-radius: 5px;
+  box-shadow: none; /* Elimina la sombra del borde */
+  text-decoration: none;
+  
+}
+
+
+h2{
+  font-family:monospace;
+  text-align: center;
+  color: #54075a;
+  font-weight: bold;
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; /* Cambia la tipografía de la letra */
+  text-align: center;
+  text-shadow: 0 0 8px 	#e90052; 
+}
+
+
+.login-form{
+  
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+
+
+.contenedor {
+  padding: 20px;
+  border-radius: 5px;
+  background-image: url('https://github.com/jacingithub12/pagWeb/blob/main/fondo%20nuevo.png?raw=true');
+  background-position: center; /* Centra la imagen de fondo */
+  background-size: 1000px 600px;
+  width: 260px ;
+  height: 500px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 5); 
+  position: relative;
+}
+
+.submit{
+  background-color: #04e678; /* Cambia el color de fondo a violeta claro */
+  border: none; /* Elimina el borde */
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; /* Cambia la tipografía de la letra */
+  font-size: 16pt; /* Aumenta el tamaño de la letra */
+  border-radius: 5px;
+  padding-top: 10px;
+  padding-left: 80px;
+  padding-right: 80px;
+  padding-bottom: 15px;
+  display: flex;
+  justify-content: center; /* Centra horizontalmente */
+  margin: left 50px;;
+  margin-right: 50px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 1.5);
+  color: black;
+}
+
+
+.submit:hover {
+  background-color: #00803e; /* Cambia el color de fondo a uno más oscuro */
+  color: rgb(38, 38, 38);
+}
+
+.submit:active {
+  background-color: #00401f; /* Cambia el color de fondo a uno aún más oscuro */
+  color:rgb(73, 49, 90);
+  box-shadow: none;
+}
+
+
+
+
+.boton_registro button {
+  border: none; 
+  font-size: 12pt; /* Reduce el tamaño de la letra */
+}
+
+input[type=email],
+input[type=password] {
+  border: none; /* Elimina el borde */
+  background-color: #38003c; 
+  border-radius: 5px; /* Redondea los bordes */
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; /* Cambia la tipografía de la letra */
+  font-size: 16px;
+  padding-top: 10px;
+  padding-right: 15px;
+  padding-left: 15px;
+  padding-bottom: 2px;
+  text-align: center;
+  margin-left: 10px;
+  margin-right: 17px;
+  margin-top: 8px;
+  color: #a7d1d2;
+}
+
+input[type=password]:hover {
+  background-color: #48024d; /* Cambia el color de fondo a uno más oscuro */
+}
+
+input[type=email]:hover {
+  background-color: #48024d; /* Cambia el color de fondo a uno más oscuro */
+
+}
+
+input[type=password]:active{
+  background-color: #2f0132; /* Cambia el color de fondo a uno más oscuro */
+}
+
+input[type=email]:active {
+  background-color: #2f0132; /* Cambia el color de fondo a uno más oscuro */
+
+}
+
+
+.boton_registro button {
+  background-color: transparent; /* Elimina el fondo */
+  border: none; /* Elimina los bordes */
+  text-decoration: underline; /* Subraya el texto */
+  display: flex;
+  justify-content: center; /* Centra horizontalmente */
+  margin-top: 20px; /* Ajusta el margen superior según sea necesario */
+  color: rgb(0, 0, 0);
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; /* Cambia la tipografía de la letra */
+  margin-left: 54px;
+}
+
+
+.boton_registro button:hover{
+  color: rgb(73, 49, 90);
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);;
+}
+
+
+.hidden-button {
+  display: none;
+}
+
+
+.slide-out-left {
+  animation: slideOutLeft 0.5s forwards;
+}
+
+.slide-in-right {
+  animation: slideInRight 0.5s forwards;
+}
+
+@keyframes slideOutLeft {
+  100% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+}
+
+@keyframes slideInRight {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+
+
+.registrarme{
+  background-color: #04e678; /* Cambia el color de fondo a violeta claro */
+  border: none; /* Elimina el borde */
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; /* Cambia la tipografía de la letra */
+  font-size: 16pt; /* Aumenta el tamaño de la letra */
+  border-radius: 5px;
+  padding-top: 10px;
+  padding-left: 80px;
+  padding-right: 80px;
+  padding-bottom: 15px;
+  display: flex;
+  justify-content: center; /* Centra horizontalmente */
+  margin-left: 10px;
+  margin-right: 80px;
+  margin-top: 20px;
+  margin-bottom: 15px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 1.5);
+  color: black;
+}
+.registroinput{
+  margin-left: 15px;
+}
+
+
+.registrarme:hover {
+  background-color: #00803e; /* Cambia el color de fondo a uno más oscuro */
+  color: rgb(38, 38, 38);
+}
+
+.registrarme:active {
+  background-color: #00401f; /* Cambia el color de fondo a uno aún más oscuro */
+  color:rgb(73, 49, 90);
+  box-shadow: none;
+}
+
+
+
+registroinput[type=email],
+registroinput[type=password] {
+  border: none; /* Elimina el borde */
+  background-color: #38003c; /* Cambia el color de fondo a violeta claro */
+  border-radius: 5px; /* Redondea los bordes */
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; /* Cambia la tipografía de la letra */
+  font-size: 16px;
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-left: 5px;
+  padding-bottom: 2px;
+  text-align: center;
+  align-items: center;
+  margin-top: 8px;
+  color: #a7d1d2;
+  display: flex;
+  
+}
+
+
+
+input[type=password]:hover {
+  background-color: #48024d; /* Cambia el color de fondo a uno más oscuro */
+}
+
+input[type=email]:hover {
+  background-color: #48024d; /* Cambia el color de fondo a uno más oscuro */
+
+}
+
+input[type=password]:active{
+  background-color: #2f0132; /* Cambia el color de fondo a uno más oscuro */
+}
+
+input[type=email]:active {
+  background-color: #2f0132; /* Cambia el color de fondo a uno más oscuro */
+
+}
+
+
+
+#volver_button{
+  background-color: transparent; /* Elimina el fondo */
+  border: none; /* Elimina los bordes */
+  text-decoration: underline; /* Subraya el texto */
+  display: flex;
+  justify-content: center; /* Centra horizontalmente */
+  margin-top: 1px; /* Ajusta el margen superior según sea necesario */
+  color: rgb(0, 0, 0);
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; /* Cambia la tipografía de la letra */
+  margin-left: 80px;
+  
+}
+
+
+#volver_button:hover{
+  color: rgb(73, 49, 90);
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);;
+}
+
+
+
+
+@media only screen and (max-width: 600px) {
+  .contenedor {
+    width: 90%; /* Reducir el ancho relativo para pantallas más pequeñas */
+    padding: 10px; /* Ajustar el relleno para pantallas más pequeñas */
+  }
+
+  /* Estilos adicionales para ajustar elementos internos */
+  .inputs,
+  .boton_registro,
+  .register {
+    width: 90%; /* Ajusta el ancho de estos elementos para pantallas pequeñas */
+    text-align: center; /* Centra el texto dentro de estos elementos */
+  }
+
+  input[type=email],
+  input[type=password],
+  button {
+    width: 100%; /* Ajusta el ancho completo para pantallas pequeñas */
+    margin-bottom: 10px; /* Espaciado entre elementos */
+  }
+
+  .submit,
+  .registrarme {
+    padding: 12px 40px; /* Ajusta el relleno de los botones para pantallas pequeñas */
+  }
+}

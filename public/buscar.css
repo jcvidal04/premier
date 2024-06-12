@@ -1,0 +1,302 @@
+body {
+    
+    margin: 0;
+    background-image: url('https://github.com/jacingithub12/pagWeb/blob/main/PANTALLA.png?raw=true');
+    background-size: cover; /* Ajusta la imagen para que cubra todo el fondo */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+      
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding-top: 1rem;
+}
+
+
+#searchContainer {
+    text-align: center;
+    margin-bottom: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+#searchForm {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    Justify-content: center;
+    margin-top: 0;
+    margin-top: -5rem;
+}
+    
+#searchForm input {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 300px;
+    margin-right: 10px; /* Añade espacio entre el input y el botón */
+}
+    
+.boton_buscar {
+    background-color: #04e678; /* Cambia el color de fondo */
+    border: none; /* Elimina el borde */
+    font-size: 16pt; /* Aumenta el tamaño de la letra */
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 1.5);
+    color: black;
+    cursor: pointer;
+}
+    
+.boton_buscar:hover {
+    background-color: #00803e; /* Cambia el color de fondo al pasar el mouse */
+    color: rgb(38, 38, 38);
+}
+    
+.boton_buscar:active {
+    background-color: #00401f; /* Cambia el color de fondo al hacer clic */
+    color: rgb(73, 49, 90);
+    box-shadow: none;
+}
+    
+
+#searchForm div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    
+
+}
+
+#searchForm input {
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 300px;
+    margin-top: 10px;
+}
+
+#searchForm button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+#searchForm button:hover {
+    background-color: #0056b3;
+}
+
+#equiposContainer {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center; /* Centra las tarjetas horizontalmente */
+}
+
+.card {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    background-color: #f9f9f9;
+    max-width: 90%;
+    margin-bottom: 20px;
+    flex: 1; /* Asegura que las tarjetas crezcan para llenar el espacio disponible */
+    min-width: 300px; /* Asegura que las tarjetas tengan un ancho mínimo */
+}
+
+.card-header {
+    background-color: #eee;
+    padding: 10px;
+    text-align: center;
+}
+
+.card-header img {
+    max-width: 70px;
+    max-height: 70px;
+    display: block;
+    margin: 0 auto 10px;
+}
+
+.card-body {
+    padding: 15px;
+    text-align: center;
+    text-justify: auto;
+    justify-content: center;
+    font-size: 18px; 
+    line-height: 1.5; 
+}
+
+.card-body p {
+    margin: 9px 0; 
+}
+
+.card-body table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: 27px;
+    margin-top: 10px;
+    font-size: 16px; 
+}
+
+.card-body table, .card-body th, .card-body td {
+    border: 1px solid #ddd;
+    padding: 10px; 
+    text-align: center;
+}
+
+.card-body th {
+    background-color: #f2f2f2;
+}
+
+.goleadores-table {
+    margin-top: 10px;
+}
+
+.goleadores-table th {
+    background-color: #f2f2f2;
+}
+.goles-h3{
+    margin-top: 2rem;
+}
+
+.button-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.team-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    
+}
+
+.team-button:hover {
+    background-color: #0056b3;
+}
+
+
+
+.tituloBuscar {
+    color: rgb(118, 12, 175);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding: 0px; /* Añade espacio dentro del borde para mejorar la apariencia */
+    text-shadow: 2px 2px 4px white; /* Agrega una sombra blanca */
+    text-shadow: -3px 1px 4px rgb(41, 189, 97); /* Agrega una sombra blanca */
+    margin-bottom: 0 !important;
+    margin-top: -10rem;   
+    align-items: center;
+    
+    
+
+}
+
+.buscador_input{
+    margin-top: 20px !important; /* Elimina el espacio superior */
+    padding-top: 0; /* Elimina el espacio interno superior */
+    
+    
+
+}
+
+.boton_buscar{
+    background-color: #04e678 !important; /* Cambia el color de fondo a violeta claro */
+    border: none; /* Elimina el borde */
+    font-size: 16pt; /* Aumenta el tamaño de la letra */
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 1.5);
+    color: black;
+
+}
+
+
+
+.boton_buscar:hover {
+    background-color: #00803e !important; /* Cambia el color de fondo a uno más oscuro */
+    color: rgb(38, 38, 38) !important;
+}
+  
+.boton_buscar:active {
+    background-color: #00401f !important; /* Cambia el color de fondo a uno aún más oscuro */
+    color:rgb(73, 49, 90) !important;
+    box-shadow: none;
+}
+
+.input_equipo{
+    border: none; /* Elimina el borde */
+    background-color: #38003c; /* Cambia el color de fondo a violeta claro */
+    border-radius: 5px; /* Redondea los bordes */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+    font-size: 5px;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 2px;
+    color: #a7d1d2;
+    display: flex;
+    border: none;
+
+    
+}
+
+
+.no_encontrado{
+    color: beige;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+}
+
+#searchContainer{
+    margin-top: 5%;
+}
+
+
+
+
+/*------------------RESPONSIVE CHATGPT---------------*/
+/* Estilos para dispositivos pequeños (móviles) */
+@media (max-width: 600px) {
+    .contenedor {
+      width: 100%;
+      padding: 10px;
+    }
+  }
+  
+  /* Estilos para tablets */
+  @media (min-width: 600px) and (max-width: 768px) {
+    .contenedor {
+      width: 90%;
+      padding: 20px;
+    }
+  }
+  
+  /* Estilos para dispositivos grandes (desktops) */
+  @media (min-width: 768px) {
+    .contenedor {
+      width: 80%;
+      padding: 30px;
+    }
+  }
+
+
+
+  
