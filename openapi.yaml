@@ -1,0 +1,206 @@
+openapi: 3.0.0
+info:
+  title: Users Backend Server API
+  description: API for managing user authentication and favorite teams.
+  version: 1.0.0
+servers:
+  - url: http://localhost:3000
+paths:
+  /login/:
+    get:
+      summary: Serve login page
+      responses:
+        '200':
+          description: Login page
+          content:
+            text/html:
+              schema:
+                type: string
+    post:
+      summary: User login
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                username:
+                  type: string
+                password:
+                  type: string
+      responses:
+        '200':
+          description: Login successful
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+        '401':
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+  /api/equipos:
+    get:
+      summary: Fetch teams
+      security:
+        - cookieAuth: []
+      responses:
+        '200':
+          description: A JSON array of teams
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  type: object
+        '500':
+          description: Error fetching data
+  /register/:
+    post:
+      summary: Register a new user
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                username:
+                  type: string
+                password:
+                  type: string
+      responses:
+        '200':
+          description: User registered successfully
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  success:
+                    type: boolean
+  /:
+    get:
+      summary: Serve fixture page
+      security:
+        - cookieAuth: []
+      responses:
+        '200':
+          description: Fixture page
+          content:
+            text/html:
+              schema:
+                type: string
+  /buscar:
+    get:
+      summary: Serve buscar page
+      security:
+        - cookieAuth: []
+      responses:
+        '200':
+          description: Buscar page
+          content:
+            text/html:
+              schema:
+                type: string
+  /api/favorite:
+    post:
+      summary: Save favorite team
+      security:
+        - cookieAuth: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                equipoFavorito:
+                  type: string
+      responses:
+        '200':
+          description: Favorite team saved successfully
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  success:
+                    type: boolean
+  /userDetails:
+    post:
+      summary: Get user details
+      security:
+        - cookieAuth: []
+      responses:
+        '200':
+          description: User details
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  user:
+                    type: string
+                  password:
+                    type: string
+                  equipoFavorito:
+                    type: string
+        '404':
+          description: User details not found
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+        '500':
+          description: Error fetching user details
+  /delete/:
+    post:
+      summary: Delete favorite team
+      security:
+        - cookieAuth: []
+      responses:
+        '200':
+          description: Favorite team deleted successfully
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  success:
+                    type: boolean
+        '404':
+          description: Favorite team not found
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+        '500':
+          description: Error deleting favorite team
+  /logout:
+    post:
+      summary: Logout user
+      responses:
+        '200':
+          description: User logged out
+components:
+  securitySchemes:
+    cookieAuth:
+      type: apiKey
+      in: cookie
+      name: connect.sid
